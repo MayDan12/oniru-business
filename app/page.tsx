@@ -48,7 +48,7 @@ export default function Home() {
       >
         {/* Logo Section */}
         <motion.div
-          className="flex justify-center mb-12"
+          className="flex justify-center mb-10"
           variants={itemVariants}
         >
           <motion.div
@@ -57,7 +57,7 @@ export default function Home() {
             transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
           >
             <Image
-              src="/images/irubusinessnetwork.jpg"
+              src="/images/onirubusinessnetwork.jpg"
               alt="IRU Business Network Logo"
               className="h-32 w-auto drop-shadow-lg"
               priority
@@ -70,7 +70,7 @@ export default function Home() {
         {/* Main Content */}
         <motion.div className="text-center space-y-6" variants={itemVariants}>
           <motion.h1
-            className="text-5xl md:text-7xl font-bold text-primary text-balance"
+            className="text-3xl md:text-6xl font-serif font-bold text-primary text-balance"
             variants={itemVariants}
           >
             Something Extraordinary
@@ -81,13 +81,13 @@ export default function Home() {
             className="text-xl md:text-2xl text-muted-foreground text-balance max-w-xl mx-auto"
             variants={itemVariants}
           >
-            We're building the future of business networking. Our platform is
-            under construction and coming very soon.
+            We&apos;re building the future of business networking. Our platform
+            is under construction and coming very soon.
           </motion.p>
         </motion.div>
 
         {/* Decorative Elements */}
-        <motion.div className="flex justify-center gap-8 my-12">
+        <motion.div className="flex justify-center gap-8 my-10">
           {[...Array(3)].map((_, i) => (
             <motion.div
               key={i}
@@ -138,7 +138,7 @@ export default function Home() {
 
         {/* Footer Info */}
         <motion.div
-          className="text-center mt-16 text-sm text-muted-foreground"
+          className="text-center mt-10 text-sm text-muted-foreground"
           variants={itemVariants}
         >
           <p>
@@ -150,7 +150,7 @@ export default function Home() {
 
         {/* Decorative Cards */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-16"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10"
           variants={containerVariants}
         >
           {[
