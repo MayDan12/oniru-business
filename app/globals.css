@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
   /* <CHANGE> Gold luxury color scheme matching IRU Business Network logo */
@@ -122,6 +125,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* <CHANGE> Custom animations for luxury under construction page */
 @keyframes float {
   0%,
   100% {
@@ -151,4 +159,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
 }
