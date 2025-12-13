@@ -1098,7 +1098,7 @@ export default function Home() {
                   >
                     <div className="px-4">
                       <div className="flex items-start justify-between gap-4">
-                        <h3 className="text-lg font-semibold text-foreground flex-1">
+                        <h3 className="font-semibold text-foreground flex-1">
                           {faq.q}
                         </h3>
                         <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
