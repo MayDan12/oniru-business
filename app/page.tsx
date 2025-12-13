@@ -255,7 +255,7 @@ export default function Home() {
               </div>
               {/* Floating badge */}
               <motion.div
-                className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-lg border border-border"
+                className="absolute -bottom-6 -left-6 bg-card p-4 rounded-xl shadow-lg border border-border"
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
               >
