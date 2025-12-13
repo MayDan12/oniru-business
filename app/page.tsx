@@ -460,7 +460,7 @@ export default function Home() {
                   }`}
                 >
                   <div
-                    className={`w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform ${
+                    className={`w-14 h-14 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform ${
                       service.highlight
                         ? "bg-primary-foreground/20"
                         : "bg-primary/10"
@@ -475,7 +475,7 @@ export default function Home() {
                     />
                   </div>
                   <h3
-                    className={`text-xl font-bold mb-3 ${
+                    className={`text-xl font-bold mb-2 ${
                       service.highlight
                         ? "text-primary-foreground"
                         : "text-foreground"
@@ -492,7 +492,7 @@ export default function Home() {
                   >
                     {service.desc}
                   </p>
-                  <div className="mt-6 flex items-center gap-2 text-sm font-semibold group-hover:gap-3 transition-all">
+                  <div className="mt-4 flex items-center gap-2 text-sm font-semibold group-hover:gap-3 transition-all">
                     <span
                       className={
                         service.highlight
