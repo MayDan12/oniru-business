@@ -151,7 +151,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="fira-sans min-h-screen bg-background">
       <Header />
 
       <section
@@ -187,7 +187,7 @@ export default function Home() {
               </motion.h1>
 
               <motion.p
-                className="text-lg md:text-xl text-foreground/70 mb-8 text-pretty leading-relaxed"
+                className="font-sans text-lg md:text-xl text-foreground/70 mb-8 text-pretty leading-relaxed"
                 variants={itemVariants}
               >
                 Partners in Sustainable Living and Ease of Business within Iru
@@ -1079,7 +1079,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 space-y-2">
+            <div className="grid md:grid-cols-2 gap-4 space-y-2">
               {faqs.map((faq, index) => (
                 <motion.div
                   key={index}
