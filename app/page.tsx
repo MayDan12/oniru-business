@@ -24,6 +24,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import { HeroCarousel } from "@/components/hero-carousel";
 
 export default function Home() {
   const [formData, setFormData] = React.useState({
@@ -153,6 +154,8 @@ export default function Home() {
   return (
     <div className="fira-sans min-h-screen bg-background">
       <Header />
+
+      <HeroCarousel />
 
       <section
         id="home"
