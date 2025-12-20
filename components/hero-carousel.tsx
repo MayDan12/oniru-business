@@ -14,7 +14,7 @@ const slides = [
     title: "HRM OBA ABDULWASIU OMOGBOLAHAN LAWAL",
     subtitle: "CON ABISOGUN II THE ONIRU OF IRU KINGDOM",
     image: "/images/oba.jpg",
-    link: "/event",
+    link: "/message",
     cta: "View Message",
   },
   {
@@ -24,7 +24,7 @@ const slides = [
     subtitle:
       "Honourable Commissioner for Commerce, Cooperatives, Trade and Investment",
     image: "/images/comm.jpg",
-    link: "/investment",
+    link: "/",
     cta: "View Message",
   },
   {
@@ -33,7 +33,7 @@ const slides = [
     title: "Cultural Diplomacy Showcase",
     subtitle: "Experience the rich heritage and creative economy of Iruland",
     image: "/images/oba.jpg",
-    link: "/culture",
+    link: "/",
     cta: "Discover Our Culture",
   },
   {
@@ -42,7 +42,7 @@ const slides = [
     title: "Become a Strategic Partner",
     subtitle: "Join leading organizations in shaping Iru's business future",
     image: "/images/oba.jpg",
-    link: "/partnerships",
+    link: "/",
     cta: "Partner With Us",
   },
 ];
@@ -123,13 +123,13 @@ export function HeroCarousel() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="max-w-2xl"
+                className="max-w-2xl "
               >
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3 }}
-                  className="inline-block px-4 py-2 bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full mb-2"
+                  className="inline-block px-4 py-1 bg-primary/90 text-primary-foreground text-[12px] md:text-sm font-semibold rounded-full mb-2"
                 >
                   {slides[current].feature}
                 </motion.div>
@@ -138,7 +138,7 @@ export function HeroCarousel() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="text-2xl w-[60%] font-bold text-foreground mb-2 text-balance leading-tight"
+                  className="text-2xl w-[60%] font-bold text-foreground mb-2 text-balance leading-5"
                 >
                   {slides[current].title}
                 </motion.h1>
@@ -147,7 +147,7 @@ export function HeroCarousel() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 }}
-                  className="text-lg/6 w-[55%] text-foreground/80 mb-3 text-balance break-normal"
+                  className="text-base/5 md:text-lg/5 w-[55%] text-foreground/80 mb-2 text-balance break-normal"
                 >
                   {slides[current].subtitle}
                 </motion.p>
@@ -190,7 +190,7 @@ export function HeroCarousel() {
       </div>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-3 z-20">
+      <div className="absolute hidden bottom-8 left-0 right-0 md:flex justify-center gap-3 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
