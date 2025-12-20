@@ -10,33 +10,38 @@ import Image from "next/image";
 const slides = [
   {
     id: 1,
-    title: "Oniru Business & Cultural Day 2026",
-    subtitle: "Join us for the premier business and cultural engagement",
+    feature: "A Short Message",
+    title: "HRM OBA ABDULWASIU OMOGBOLAHAN LAWAL",
+    subtitle: "CON ABISOGUN II THE ONIRU OF IRU KINGDOM",
     image: "/images/oba1.jpg",
     link: "/event",
-    cta: "Learn About the Event",
+    cta: "View Message",
   },
   {
     id: 2,
-    title: "Investment Opportunities in Iru Kingdom",
-    subtitle: "Discover strategic investment corridors and business incentives",
-    image: "/modern-lagos-skyline-victoria-island-business-dist.jpg",
+    feature: "A Short Message",
+    title: "Mrs Folashade Kaosarat Bada-Ambrose",
+    subtitle:
+      "Honourable Commissioner for Commerce, Cooperatives, Trade and Investment",
+    image: "/images/comm.jpg",
     link: "/investment",
     cta: "Explore Opportunities",
   },
   {
     id: 3,
+    feature: "Featured",
     title: "Cultural Diplomacy Showcase",
     subtitle: "Experience the rich heritage and creative economy of Iruland",
-    image: "/vibrant-african-cultural-ceremony-royal-celebratio.jpg",
+    image: "/images/comm.jpg",
     link: "/culture",
     cta: "Discover Our Culture",
   },
   {
     id: 4,
+    feature: "Featured",
     title: "Become a Strategic Partner",
     subtitle: "Join leading organizations in shaping Iru's business future",
-    image: "/business-handshake-partnership-corporate-meeting.jpg",
+    image: "/images/comm.jpg",
     link: "/partnerships",
     cta: "Partner With Us",
   },
@@ -108,12 +113,12 @@ export function HeroCarousel() {
               width={1920}
               height={1080}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background/20 via-background/20 to-background/40" />
+            <div className="absolute inset-0 bg-linear-to-r from-background/20 via-background/20 to-background/40" />
           </div>
 
           {/* Content */}
           <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-7xl mx-auto px-4 w-full pt-120">
+            <div className="max-w-7xl mx-auto  w-full pt-120">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -126,14 +131,14 @@ export function HeroCarousel() {
                   transition={{ delay: 0.3 }}
                   className="inline-block px-4 py-2 bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full mb-3"
                 >
-                  Featured
+                  {slides[current].feature}
                 </motion.div>
 
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="text-4xl font-bold text-foreground mb-3 text-balance leading-tight"
+                  className="text-3xl font-bold text-foreground mb-2 text-balance leading-tight"
                 >
                   {slides[current].title}
                 </motion.h1>
