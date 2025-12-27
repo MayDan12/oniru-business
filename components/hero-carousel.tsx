@@ -14,7 +14,7 @@ const slides = [
     title: "HRM OBA ABDULWASIU OMOGBOLAHAN LAWAL",
     subtitle: "CON ABISOGUN II THE ONIRU OF IRU KINGDOM",
     image: "/images/oba.jpg",
-    link: "/message",
+    link: "/oniru",
     cta: "View Message",
   },
   {
