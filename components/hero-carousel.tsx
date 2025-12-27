@@ -27,24 +27,24 @@ const slides = [
     link: "/commissioner",
     cta: "View Message",
   },
-  {
-    id: 3,
-    feature: "Featured",
-    title: "Cultural Diplomacy Showcase",
-    subtitle: "Experience the rich heritage and creative economy of Iruland",
-    image: "/images/oba.jpg",
-    link: "/",
-    cta: "Discover Our Culture",
-  },
-  {
-    id: 4,
-    feature: "Featured",
-    title: "Become a Strategic Partner",
-    subtitle: "Join leading organizations in shaping Iru's business future",
-    image: "/images/oba.jpg",
-    link: "/",
-    cta: "Partner With Us",
-  },
+  // {
+  //   id: 3,
+  //   feature: "Featured",
+  //   title: "Cultural Diplomacy Showcase",
+  //   subtitle: "Experience the rich heritage and creative economy of Iruland",
+  //   image: "/images/oba.jpg",
+  //   link: "/",
+  //   cta: "Discover Our Culture",
+  // },
+  // {
+  //   id: 4,
+  //   feature: "Featured",
+  //   title: "Become a Strategic Partner",
+  //   subtitle: "Join leading organizations in shaping Iru's business future",
+  //   image: "/images/oba.jpg",
+  //   link: "/",
+  //   cta: "Partner With Us",
+  // },
 ];
 
 export function HeroCarousel() {
