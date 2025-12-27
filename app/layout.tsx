@@ -2,6 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fira_Sans } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -58,7 +59,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={_firaSans.variable}>
-      <body className={`${_firaSans.className}`}>{children}</body>
+      <body className={`${_firaSans.className}`}>
+        <Header />
+        <main className="pt-14">{children}</main>
+      </body>
     </html>
   );
 }

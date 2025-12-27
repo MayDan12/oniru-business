@@ -50,13 +50,20 @@ function KingMessage() {
                 organize them more effectively.
               </p>
               <p>
-                This is what inspired the Oniru Business and Cultural Day: a
-                platform that links business and culture, supports
-                collaboration, and positions the traditional institution as an
-                active partner in community development. This platform brings
-                the Palace, Private and Public (PPP) institutions to the table,
-                reflecting the character of Iruland: resilient, open, and
-                forward-looking.
+                This is what inspired the Iru Business Network: a platform that
+                links business and culture, supports collaboration, and
+                positions the traditional institution as an active partner in
+                community development. This platform brings the Palace, Private
+                and Public (PPP) institutions to the table, reflecting the
+                character of Iruland: resilient, open, and forward-looking.
+              </p>
+              <p>
+                The Oniru Business and Cultural Day which will hold on 14
+                February 2026, will be a day of Cultural Diplomacy, Cultural
+                Exhibitions and deep engagement between the Palace, Private
+                Organizations & Government Ministries, Departments & Agencies to
+                kickstart essential dialogues to achieving our shared &
+                individual goals.
               </p>
               <p>
                 Through this initiative, we aim to make cultural diplomacy a

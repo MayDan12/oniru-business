@@ -10,7 +10,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const navItems = [
-    { label: "Home", href: "#home" },
+    { label: "Home", href: "/" },
     { label: "About", href: "#about" },
     { label: "Event", href: "#event" },
     { label: "Partnerships", href: "#partnerships" },
@@ -22,7 +22,7 @@ export function Header() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border shadow-sm"
+      className="fixed fira-sans top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border shadow-sm"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -31,7 +31,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <motion.a
-            href="#home"
+            href="/"
             className="flex items-center gap-3"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}

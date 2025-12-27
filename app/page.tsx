@@ -153,11 +153,9 @@ export default function Home() {
 
   return (
     <div className="fira-sans min-h-screen bg-background">
-      <Header />
-
       <HeroCarousel />
 
-      <section
+      {/* <section
         id="home"
         className="relative min-h-[90vh] flex items-center justify-center px-4 pt-32 pb-20 bg-linear-to-br from-background via-secondary/20 to-background overflow-hidden scroll-mt-20"
       >
@@ -165,7 +163,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left content */}
+            
             <motion.div
               variants={containerVariants}
               initial="hidden"
@@ -217,7 +215,7 @@ export default function Home() {
                 </Button>
               </motion.div>
 
-              {/* Stats */}
+              
               <motion.div
                 variants={itemVariants}
                 className="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-border"
@@ -239,7 +237,7 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* Right image */}
+        
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -256,7 +254,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-background/50 to-transparent" />
               </div>
-              {/* Floating badge */}
+              
               <motion.div
                 className="absolute -bottom-6 -left-6 bg-card p-4 rounded-xl shadow-lg border border-border"
                 animate={{ y: [0, -10, 0] }}
@@ -279,7 +277,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-primary text-primary-foreground py-6">
         <div className="max-w-7xl mx-auto px-4">

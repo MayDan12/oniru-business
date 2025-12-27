@@ -24,7 +24,7 @@ const slides = [
     subtitle:
       "Honourable Commissioner for Commerce, Cooperatives, Trade and Investment",
     image: "/images/comm.jpg",
-    link: "/",
+    link: "/commissioner",
     cta: "View Message",
   },
   {
@@ -88,7 +88,10 @@ export function HeroCarousel() {
   }, [current]);
 
   return (
-    <section className="relative h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden bg-background">
+    <section
+      id="home"
+      className="relative h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden bg-background"
+    >
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={current}
