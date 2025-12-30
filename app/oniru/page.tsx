@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 function KingMessage() {
-  // What is life without the ONiru of IRU land
   return (
     <section className="max-w-5xl mx-auto px-4 py-12">
       <div className="mb-6 inline-block px-4 py-2 bg-primary/90 text-primary-foreground text-sm font-semibold rounded-full">
