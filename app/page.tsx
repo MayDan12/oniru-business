@@ -154,7 +154,6 @@ export default function Home() {
   return (
     <div className="fira-sans min-h-screen bg-background">
       <HeroCarousel />
-      {/* Added a lot of things as on the new year  */}
 
       {/* <section
         id="home"
