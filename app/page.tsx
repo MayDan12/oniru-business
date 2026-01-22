@@ -57,7 +57,7 @@ export default function Home() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -557,7 +557,7 @@ export default function Home() {
                 organize them more effectively.
               </p>
               <p className="text-lg md:text-xl">
-                This is what inspired the Oniru Business and Cultural Day—a
+                This is what inspired the Oniru Business and Cultural Day, a
                 platform that links business and culture, supports
                 collaboration, and positions the traditional institution as an
                 active partner in community development. It reflects the
@@ -627,73 +627,6 @@ export default function Home() {
                     {org.name}
                   </h3>
                   <p className="text-sm text-foreground/60">{org.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="py-24 px-4 bg-background">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="text-center mb-16">
-              <div className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-semibold rounded-full mb-4">
-                Our Partners
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Our People
-              </h2>
-              <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-                Trusted partnerships driving growth and development in Iru
-                Kingdom
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Oniru Palace",
-                  desc: "Traditional Institution Leadership",
-                  icon: Award,
-                },
-                {
-                  name: "Lagos State Government",
-                  desc: "State Partnership",
-                  icon: Building2,
-                },
-                {
-                  name: "Lagos State Ministry of Commerce",
-                  desc: "Commerce & Trade Support",
-                  icon: TrendingUp,
-                },
-              ].map((org, i) => (
-                <motion.div
-                  key={i}
-                  className="group p-8 bg-card rounded-2xl border-2 border-border hover:border-primary transition-all text-center"
-                  whileHover={{
-                    y: -8,
-                    boxShadow: "0 20px 40px rgba(194, 160, 96, 0.2)",
-                  }}
-                  transition={{ duration: 0.3 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  custom={i}
-                >
-                  <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-primary/20 group-hover:scale-110 transition-all">
-                    <org.icon className="w-10 h-10 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">
-                    {org.name}
-                  </h3>
-                  <p className="text-foreground/60 leading-relaxed">
-                    {org.desc}
-                  </p>
                 </motion.div>
               ))}
             </div>

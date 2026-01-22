@@ -141,7 +141,7 @@ export function HeroCarousel() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="text-2xl w-[60%] font-bold text-foreground mb-2 text-balance leading-5"
+                  className="text-2xl w-[60%] text-shadow-[1px_1px_0px_#fff,-1px_-1px_0px_#fff,1px_-1px_0px_#fff,-1px_1px_0px_#fff] font-bold text-foreground mb-2 text-balance leading-6"
                 >
                   {slides[current].title}
                 </motion.h1>
@@ -150,7 +150,7 @@ export function HeroCarousel() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 }}
-                  className="text-base/5 md:text-lg/5 w-[55%] text-foreground/80 mb-2 text-balance break-normal"
+                  className="text-base/5 md:text-lg/5 w-[55%] text-shadow-[1px_1px_0px_#fff,-1px_-1px_0px_#fff,1px_-1px_0px_#fff,-1px_1px_0px_#fff] text-foreground/80 mb-2 text-balance break-normal"
                 >
                   {slides[current].subtitle}
                 </motion.p>
