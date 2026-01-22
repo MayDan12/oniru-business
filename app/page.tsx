@@ -154,8 +154,8 @@ export default function Home() {
   return (
     <div className="fira-sans min-h-screen bg-background">
       <HeroCarousel />
-
-      {/* <section
+      {/* 
+      <section
         id="home"
         className="relative min-h-[90vh] flex items-center justify-center px-4 pt-32 pb-20 bg-linear-to-br from-background via-secondary/20 to-background overflow-hidden scroll-mt-20"
       >
