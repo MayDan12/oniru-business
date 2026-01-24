@@ -152,7 +152,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="fira-sans min-h-screen bg-background">
+    <div className="fira-sans bg-background">
       <HeroCarousel />
       {/* 
       <section
