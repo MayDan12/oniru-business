@@ -90,7 +90,7 @@ export function HeroCarousel() {
   return (
     <section
       id="home"
-      className="relative h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden bg-background"
+      className="relative min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] bg-background"
     >
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
@@ -121,7 +121,7 @@ export function HeroCarousel() {
 
           {/* Content */}
           <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-7xl mx-auto px-4  w-full pt-80 md:pt-120">
+            <div className="max-w-7xl mx-auto px-4  w-full pt-80 ">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
